@@ -1,5 +1,5 @@
 <h1 align="center">
- Backend Guide 
+ Backend Guide (Node+Express)
 </h1>
 <br />
 <p align="center"><strong>🔮 Understanding the Backend Concept's and to Respond efficiently to the client Requests </strong></p>
@@ -47,37 +47,48 @@
 
 <br/>
 
+## Definition Of Node js
+<p>
+Mainly defined as a Javascript framework that is mainly used for creating servers . It only uses javascript language. But You Know that node js alone cannot make server , it may but it becomes very complex and lenthy , so in order to ease this task Express comes into existance . Express js is a node js framework only. Express is just like react js which is also a framework that helps building faster development process. 
+</p>
+
+
 <br/>
 
-## 🌟  Installation Process 
 
-#📑  There are two ways through which we can Setup our System . Let's seee
-
-<details>
- <summary><b>Installation Process includes</b></summary>
- <br>
-<p>
-- Download Nodejs (Make sure version should be > 17 )
+<PHASE-1>
  
-*  open cmd and run this coommand by going to desktop (cd Desktop) command:npx create-react-native-app project_name 
+<br>
 
-* now run this command to start your metro cmd prompt (from where your app will be initialised) command: npx expo start
-*   Here you can get some errors toh brothers Acche se step follow karna
- *   Now here before running previous command make sure to start an emulator (i will recommend Android Studio)
- *   Download Android Studio and Install it (settings same rehne dena)....install completely
- *   After installing go to SDK Manager 
-</p>
-</details>
+## Installation Process
 
+*  We have a lot of node js Version but better to go with LTS (Long Term Support) Version which is 16.16.0 as a msi installer
+*  To confirm installation move to cmd and write (npm -v)
+*  Now if we will be intsalling any library in node js then it will be coming from npmjs.com which is a website containing all of the libraries there
+*  Check if npm is available or not - by default it comes with node but if not available install it by (npm intall)
+
+  
+  <br>
+
+  
 <details>
-<summary><b>Installation Through CLI(Command Line Argument)</b></summary>
+<summary><b>Starting Our Basic Project</b></summary>
 
-<p>
-<pre><code>git clone https://github.com/plandex-ai/plandex.git
-git clone https://github.com/plandex-ai/survey.git
-cd plandex/app/cli
-go build -ldflags "-X plandex/version.Version=$(cat version.txt)"
-mv plandex /usr/local/bin # adapt as needed for your system
-</code></pre>
-</p>
+-  Now create a folder anywhere on device a
+  -  Open it on VS Code  for opening professionally type (code .)
+  -  Initialize git using (git init)  -  <pre><code>git init</code></pre>
+  - make a repository on github 
+  -  copy repo link and link withv this project (git remote add origin repo_link)  <pre><code>git init</code></pre>
+- you can do (git add .)(git commit -m "")(git push origin master) once finishing the Project  <pre><code>git add .</code></pre><pre><code>git commit -m ""</code></pre><pre><code>git push origin master</code></pre>
+- Starting with VS Code 
+ - open terminal (ctrl+shift+`)  <pre><code>ctrl+shift+backtics</code></pre>
+ - write command (npm init ) , by doing so a package.json file will be made which will contain all of our dependencies 
+ - now write command (npm install express) , we are installing express js here this will create three files  <pre><code>npm install express</code></pre>
+   - package-lock.json
+   - node_modules-containg library files
+ - After creating everything you might asked to select your package name , description and other things as well so in that case select anything you want but make sure that the name of entry file should mathch with the actual file made (entry file declared in package.json === actually made)
+ - Now create a file suppose (server.js)
+ - We will now start writing our code from here
+
+
 </details>
